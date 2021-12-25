@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html><html>
+    <head>
+        <title>NSP Final By Jasson Reynaldo</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h2 style="text-align: center;">Cuisine Club Recruitment Form</h2>
+            <form action="NSPJRFinal" method="get">
+                <div class="inputBox">
+                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="fullname">Name:</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="favfood" name="favfood" required>
+                    <label for="favfood">favorite food: </label>
+                </div>
+                <label for="bdate">What date were you born?</label><br>
+                <input class="formdate" type="date" id="bdate" name="bdate">
+                <br>
+                <br><label for="radiobt">Gender</label><br>
+                <div class="radiobt">
+                    <input type="radio" id="op1" name="gender" value="male">
+                    <input type="radio" id="op2" name="gender" value="female" checked>
+                    <label for="op1" class="op op1">
+                        <span class="dot"></span>
+                        <span>Male</span>
+                    </label>
+                    <label for="op2" class="op op2">
+                        <span class="dot"></span>
+                        <span>Female</span>
+                    </label>
+                </div>
+                <br>
+                <br><label>what is/are the type(s) of food do you like?</label><br>
+                <input type="checkbox" name="flav1" value="Sweet">Sweet <br>
+                <input type="checkbox" name="flav2" value="Sour">Sour<br>
+                <input type="checkbox" name="flav3" value="Salty">Salty<br>
+                <input type="checkbox" name="flav4" value="Bitter">Bitter<br>
+                <input type="checkbox" name="flav5" value="savory">Savory<br>
+                <br><label for="Exp">Cooking Experience</label><br>
+                <select name="Exp" id="Exp">
+                    <option value="Less then 1 Year">Less then 1 Year</option>
+                    <option value="1-2 Years">1-2 Years</option>
+                    <option value="More than 2 years">More than 2 years</option>
+                </select><br><br>
+                <div class="inputBox">
+                    <input type="email" id="email" name="email" placeholder="  " required>
+                    <label for="email">Enter your email:</label>
+                </div>
+                <input type="reset" value="reset">
+                <input type="submit" value="sumbit">
+            </form>  
+        </div>
+    </body>
+</html>

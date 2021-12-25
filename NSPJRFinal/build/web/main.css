@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: #fdca00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.container{
+    margin-bottom:5%;
+    margin-top: 5%;
+    width: 500px;
+    padding: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: #fffed5;
+    box-shadow: 9px 7px 12px 2px rgba(0,0,0,0.68);
+    border-radius: 18px 18px 18px 18px;
+}
+
+.container h2{
+    padding-bottom: 10px;
+}
+
+.container .inputBox{
+    position: relative;
+}
+
+.container .inputBox input{
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.container .inputBox label{
+    letter-spacing: 1px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.container .inputBox input:focus ~ label,
+.container .inputBox input:valid ~ label,
+.container .inputBox input[type="email"]:not(:placeholder-shown)~ label{
+    top:-18px;
+    left: 0;
+    font-size: 12px;
+}
+
+.container input[type="submit"],.container input[type="reset"]{
+    background: purple;
+    border: none;
+    outline: none;
+    color: #fffed5;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.radiobt{
+    display: inline-flex;
+    background: #fffed5;
+    justify-content: space-evenly;
+  }
+
+  .radiobt .op{
+    background: #fffed5;
+    display: flex;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border: 2px solid lightgrey;
+    transition: all 0.5s ease;
+  }
+
+  .radiobt .op .dot{ 
+    height: 20px;
+    width: 9.5px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+  }
+  .radiobt .op .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #op1:checked:checked ~ .op1,
+  #op2:checked:checked ~ .op2{
+    border-color: #0069d9;
+    background: #0069d9;
+  }
+  #op1:checked:checked ~ .op1 .dot,
+  #op2:checked:checked ~ .op2 .dot{
+    background: #fff;
+  }
+  #op1:checked:checked ~ .op1 .dot::before,
+  #op2:checked:checked ~ .op2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .radiobt .option span{
+    font-size: 20px;
+    color: #808080;
+    padding: 10px;
+  }
+
+  .op1 span,.op2 span{
+      padding-left: 10px;
+  }
+
+  #op1:checked:checked ~ .op1 span,
+  #op2:checked:checked ~ .op2 span{
+    color: #fff;
+  }
+
+  select{
+      background-color: white;
+      border: 2px solid  black;
+      border-radius: 5px;
+      padding: 5px 0px 5px 0px;
+      font-size: 15px;
+  }
+
+  .formdate{
+    background-color: white;
+    border: 2px solid  black;
+    border-radius: 5px;
+    padding: 5px 0px 5px 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
